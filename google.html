@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333;
+            font-size: 14px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar .icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .container {
+            text-align: center;
+            margin-top: 0px;
+        }
+        .logo {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .search-box {
+            margin-top: 0px;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 24px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 24px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #357AE8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="https://mail.google.com" target="_blank">Gmail</a>
+    <a href="https://www.google.com/imghp" target="_blank">Imágenes</a>
+        <img src="assets/icons/lab.png" alt="Search Labs" class="icon">
+    <a href="https://www.google.com/labs" target="_blank">Search Labs</a>
+
+    </a>
+        <img src="assets/images/cuenta.jpg" alt="Cuenta de Google" class="icon">
+    <a href="https://myaccount.google.com" target="_blank">Cuenta de Google</a>
+    </a>
+</div>
+
+<div class="container">
+    <img src="assets/images/logo-google.png" alt="Logo del Buscador" class="logo">
+    <input type="text" class="search-box" placeholder="Buscar en Google o escribir una URL...">
+    <br><br>
+    <button class="search-button" onclick="alert('Simulando búsqueda...')">Buscar</button>
+</div>
+
+</body>
+</html>
